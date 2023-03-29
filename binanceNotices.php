@@ -85,6 +85,7 @@ $worker->onWorkerStart = function ($worker) {
             if (!empty($announce_data)) {
 
                 //TODO do your trading logic
+                echo json_encode($announce_data, true) ."\n";
             }
 
             if ($new_last_id > $last_id) {
